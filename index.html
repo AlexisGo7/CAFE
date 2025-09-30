@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baristas - Carta y Reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+  </head>
+  <body>
+    <header>
+      <div class="hero-header">
+        <div class="container hero">
+          <div class="logo-section">
+            <div class="logo-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <h1 class="logo-text">Baristas</h1>
+          </div>
+
+          <div class="nav-actions">
+            <div class="search-box">
+              <input type="search" placeholder="Buscar productos..." />
+            </div>
+            <div class="action-buttons">
+              <a href="#" class="action-btn cart-button">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-badge">0</span>
+              </a>
+            </div>
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              aria-controls="navMenu"
+              aria-expanded="false"
+              aria-label="Abrir menú principal"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#carta">Carta Digital</a></li>
+          <li><a href="#reservar">Reservar Mesa</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section
+      class="banner"
+      id="inicio"
+      style="
+        background: linear-gradient(
+            135deg,
+            rgba(26, 26, 26, 0.8) 0%,
+            rgba(139, 111, 71, 0.6) 100%
+          ),
+          url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900')
+            center/cover;
+      "
+    >
+      <div class="container">
+        <div class="banner-content">
+          <p class="banner-subtitle">Experiencia Premium</p>
+          <h2 class="banner-title">
+            100% Natural<br />
+            <span>Café Fresco</span>
+          </h2>
+          <a href="#carta" class="cta-button">Ver Carta</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3 class="feature-title">Envío Gratis</h3>
+            <p class="feature-desc">
+              En pedidos superiores a $150. Entrega rápida y segura.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="feature-title">Garantía Total</h3>
+            <p class="feature-desc">
+              100% garantía de devolución de dinero en todos los productos.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-gift"></i></div>
+            <h3 class="feature-title">Regalos Especiales</h3>
+            <p class="feature-desc">
+              Bonos y promociones exclusivas para nuestros clientes.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3 class="feature-title">Soporte 24/7</h3>
+            <p class="feature-desc">
+              Atención al cliente disponible todo el día, todos los días.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="carta">
+      <div class="container">
+        <h2 class="section-title">Nuestra Carta Digital</h2>
+
+        <div class="menu-items-grid">
+          <div class="menu-item-card">
+            <div class="item-image-container">
+              <img
+                src="https://images.pexels.com/photos/4195599/pexels-photo-4195599.jpeg"
+                alt="Espresso Americano"
+                class="item-image"
+              />
+            </div>
+            <div class="item-info-content">
+              <div class="item-header">
+                <h4>Expreso Americano</h4>
+                <span class="item-price">$2.50</span>
+              </div>
+              <p>
+                Clásico café de la casa. Fuerte y aromático. Se puede disfrutar
+                frío o caliente.
+              </p>
+            </div>
+            <div class="item-actions">
+              <a href="#" class="add-to-cart" title="Añadir al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="item-image-container">
+              <img
+                src="https://images.pexels.com/photos/302904/pexels-photo-302904.jpeg"
+                alt="Capuchino Tradicional"
+                class="item-image"
+              />
+            </div>
+            <div class="item-info-content">
+              <div class="item-header">
+                <h4>Capuchino Tradicional</h4>
+                <span class="item-price">$3.80</span>
+              </div>
+              <p>
+                Espresso, leche vaporizada y la capa perfecta de espuma de leche
+                cremosa.
+              </p>
+            </div>
+            <div class="item-actions">
+              <a href="#" class="add-to-cart" title="Añadir al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="item-image-container">
+              <img
+                src="https://images.pexels.com/photos/12261098/pexels-photo-12261098.jpeg"
+                alt="Café Moca"
+                class="item-image"
+              />
+            </div>
+            <div class="item-info-content">
+              <div class="item-header">
+                <h4>Café Moca</h4>
+                <span class="item-price">$4.50</span>
+              </div>
+              <p>
+                La mezcla perfecta de café, chocolate negro de origen y crema
+                batida.
+              </p>
+            </div>
+            <div class="item-actions">
+              <a href="#" class="add-to-cart" title="Añadir al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="item-image-container">
+              <img
+                src="https://images.pexels.com/photos/1577000/pexels-photo-1577000.jpeg"
+                alt="Latte Vainilla"
+                class="item-image"
+              />
+            </div>
+            <div class="item-info-content">
+              <div class="item-header">
+                <h4>Latte Vainilla</h4>
+                <span class="item-price">$4.80</span>
+              </div>
+              <p>
+                Shot de espresso con leche texturizada y sirope de vainilla
+                premium.
+              </p>
+            </div>
+            <div class="item-actions">
+              <a href="#" class="add-to-cart" title="Añadir al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="item-image-container">
+              <img
+                src="https://images.pexels.com/photos/8679333/pexels-photo-8679333.jpeg"
+                alt="Té Helado de Limón"
+                class="item-image"
+              />
+            </div>
+            <div class="item-info-content">
+              <div class="item-header">
+                <h4>Té Helado de Frutas</h4>
+                <span class="item-price">$3.50</span>
+              </div>
+              <p>
+                Refrescante té negro con un toque ácido y natural de limón
+                fresco.
+              </p>
+            </div>
+            <div class="item-actions">
+              <a href="#" class="add-to-cart" title="Añadir al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="item-image-container">
+              <img
+                src="https://images.pexels.com/photos/1448721/pexels-photo-1448721.jpeg"
+                alt="Frappuccino Caramelo"
+                class="item-image"
+              />
+            </div>
+            <div class="item-info-content">
+              <div class="item-header">
+                <h4>Frappuccino Caramelo</h4>
+                <span class="item-price">$5.90</span>
+              </div>
+              <p>
+                Café frío batido con hielo, sirope de caramelo y crema montada.
+              </p>
+            </div>
+            <div class="item-actions">
+              <a href="#" class="add-to-cart" title="Añadir al carrito">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="productos">
+      <div class="container">
+        <h2 class="section-title">Productos Destacados</h2>
+
+        <div class="products-filter">
+          <button class="filter-btn active">Destacados</button>
+          <button class="filter-btn">Más Recientes</button>
+          <button class="filter-btn">Mejores Vendidos</button>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div
+              class="product-image"
+              style="
+                background: url(https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg)
+                  center/cover;
+              "
+            >
+              <span class="discount-badge">-13%</span>
+              <div class="product-actions">
+                <a href="#" class="product-action-btn-link" title="Ver detalle">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="product-action-btn-link"
+                  title="Añadir a deseos"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+              <h3 class="product-name">Bolsa de Granos Tostados</h3>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">$14.60</span>
+                  <span class="product-price-old">$16.80</span>
+                </div>
+                <a href="#" class="add-to-cart" title="Añadir al carrito">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div
+              class="product-image"
+              style="
+                background: url('https://images.pexels.com/photos/2668498/pexels-photo-2668498.jpeg')
+                  center/cover;
+              "
+            >
+              <span class="discount-badge">-22%</span>
+              <div class="product-actions">
+                <a href="#" class="product-action-btn-link" title="Ver detalle">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="product-action-btn-link"
+                  title="Añadir a deseos"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+              <h3 class="product-name">Molinillo Manual</h3>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">$35.70</span>
+                  <span class="product-price-old">$45.80</span>
+                </div>
+                <a href="#" class="add-to-cart" title="Añadir al carrito">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div
+              class="product-image"
+              style="
+                background: url('https://images.pexels.com/photos/3013980/pexels-photo-3013980.jpeg')
+                  center/cover;
+              "
+            >
+              <div class="product-actions">
+                <a href="#" class="product-action-btn-link" title="Ver detalle">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="product-action-btn-link"
+                  title="Añadir a deseos"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="product-name">Prensa Francesa Clásica</h3>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">$23.20</span>
+                </div>
+                <a href="#" class="add-to-cart" title="Añadir al carrito">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div
+              class="product-image"
+              style="
+                background: url('https://images.pexels.com/photos/6545446/pexels-photo-6545446.jpeg')
+                  center/cover;
+              "
+            >
+              <div class="product-actions">
+                <a href="#" class="product-action-btn-link" title="Ver detalle">
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="product-action-btn-link"
+                  title="Añadir a deseos"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+              <h3 class="product-name">Taza de Cerámica Artesanal</h3>
+              <div class="product-bottom">
+                <div>
+                  <span class="product-price">$15.60</span>
+                </div>
+                <a href="#" class="add-to-cart" title="Añadir al carrito">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-section" id="reservar">
+      <div class="container">
+        <h2 class="section-title">Reservar una Mesa</h2>
+        <form
+          class="reservation-form"
+          id="reservationForm"
+          action="#"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name">Nombre Completo</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ej: Juan Pérez"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Hora</label>
+            <input
+              type="time"
+              id="time"
+              name="time"
+              min="09:00"
+              max="21:00"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="guests">Número de Personas</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Selecciona</option>
+              <option value="1">1 Persona</option>
+              <option value="2">2 Personas</option>
+              <option value="3">3 Personas</option>
+              <option value="4">4 Personas</option>
+              <option value="5">5+ Personas (Llamar)</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-calendar-check"></i> Confirmar Reserva
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="contacto">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Sobre Baristas</h3>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 1.4rem;
+                line-height: 1.8;
+                margin-bottom: 2rem;
+              "
+            >
+              Ofrecemos el mejor café premium del mundo, seleccionado
+              cuidadosamente para tu disfrute.
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/BaristasCafeOficial"
+                class="social-icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://www.twitter.com/BaristasCafe" class="social-icon"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/BaristasCafe"
+                class="social-icon"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/c/BaristasCafe"
+                class="social-icon"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="#carta">Ver Carta</a></li>
+              <li><a href="#reservar">Reservar Mesa</a></li>
+              <li><a href="#productos">Comprar Online</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Mi Cuenta</h3>
+            <ul>
+              <li><a href="#">Mi Cuenta</a></li>
+              <li><a href="#">Historial de Órdenes</a></li>
+              <li><a href="#">Lista de Deseos</a></li>
+              <li><a href="#">Seguimiento de Envío</a></li>
+              <li><a href="#">Devoluciones</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contáctanos</h3>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 1.4rem;
+                line-height: 1.8;
+                margin-bottom: 1rem;
+              "
+            >
+              <i
+                class="fa-solid fa-location-dot"
+                style="margin-right: 0.5rem; color: var(--primary)"
+              ></i
+              >Av. Café #123, Ciudad Sabor
+            </p>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 1.4rem;
+                line-height: 1.8;
+                margin-bottom: 1rem;
+              "
+            >
+              <i
+                class="fa-solid fa-phone"
+                style="margin-right: 0.5rem; color: var(--primary)"
+              ></i
+              >Tel: +1 (555) 123-4567
+            </p>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 1.4rem;
+                line-height: 1.8;
+                margin-bottom: 2rem;
+              "
+            >
+              <i
+                class="fa-solid fa-envelope"
+                style="margin-right: 0.5rem; color: var(--primary)"
+              ></i
+              >info@baristas.com
+            </p>
+
+            <div class="newsletter-form">
+              <input type="email" placeholder="Tu Email" />
+              <button>Suscribir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2025 Baristas. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // --- 1. LÓGICA DEL CARRITO ---
+        const cartBadge = document.querySelector(".cart-badge");
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        let cartCount = 0;
+
+        addToCartButtons.forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            cartCount++;
+            cartBadge.textContent = cartCount;
+
+            // Animación de pulso
+            cartBadge.classList.add("pulse-animation");
+            setTimeout(() => {
+              cartBadge.classList.remove("pulse-animation");
+            }, 500);
+
+            const closestCard =
+              button.closest(".product-card") ||
+              button.closest(".menu-item-card");
+            const productNameElement =
+              closestCard.querySelector(".product-name") ||
+              closestCard.querySelector("h4");
+
+            const productName = productNameElement
+              ? productNameElement.textContent
+              : "Producto Desconocido";
+            console.log(`¡Producto añadido! ${productName}`);
+          });
+        });
+
+        // --- 2. LÓGICA DEL MENÚ HAMBURGUESA (CON ARIA) ---
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        menuToggle.addEventListener("click", () => {
+          // Alternar la clase 'active' para desplegar/ocultar el menú
+          const isExpanded = navMenu.classList.toggle("active");
+
+          // Actualizar el atributo ARIA-EXPANDED (Accesibilidad)
+          menuToggle.setAttribute("aria-expanded", isExpanded);
+
+          // Cambiar el icono y el ARIA-LABEL
+          const icon = menuToggle.querySelector("i");
+          if (isExpanded) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark"); // Icono de cerrar (X)
+            menuToggle.setAttribute("aria-label", "Cerrar menú principal");
+          } else {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars"); // Icono de hamburguesa
+            menuToggle.setAttribute("aria-label", "Abrir menú principal");
+          }
+        });
+
+        // Opcional: Cerrar el menú después de hacer clic en un enlace (en móvil)
+        navMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            // Solo si estamos en vista móvil (menú activo)
+            if (
+              window.innerWidth <= 768 &&
+              navMenu.classList.contains("active")
+            ) {
+              navMenu.classList.remove("active");
+              // Restablecer el botón de hamburguesa
+              menuToggle.setAttribute("aria-expanded", "false");
+              menuToggle.querySelector("i").classList.remove("fa-xmark");
+              menuToggle.querySelector("i").classList.add("fa-bars");
+              menuToggle.setAttribute("aria-label", "Abrir menú principal");
+            }
+          });
+        });
+
+        // --- 3. LÓGICA DEL FORMULARIO DE RESERVA ---
+        const reservationForm = document.getElementById("reservationForm");
+        reservationForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const name = document.getElementById("name").value;
+          const date = document.getElementById("date").value;
+          const time = document.getElementById("time").value;
+          if (name && date && time) {
+            alert(
+              `✅ ¡Reserva para ${name} confirmada!\nFecha: ${date} a las ${time}.`
+            );
+            reservationForm.reset();
+          } else {
+            alert("Por favor, rellena todos los campos de la reserva.");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
